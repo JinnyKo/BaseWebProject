@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <title>My MBTI Test</title>   
+     <!-- 브라우저 마다 사이트 아이콘(favicon) 자동으로 인식 안할 떄 있음, 직접 넣어 주어도됨. 
+        이름은 꼭 favicon 으로 (.ico/.png) -->
+
+    <link rel="icon" href="favicon.png">
+    <!-- Reset.css: 각 브라우저의 기본 스타일을 초기화 하기 위해, ex <h1> <h2> 테그 안먹히는 것,모든 브라우저에서 나의 css 가 동일하게 적용 되도록 -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- 대부분의 웹폰트들은 경량화가 필요함. 속도에 영향을 끼침 / font 적용 하려면 css 있어야함(링크만 복붙했다고 해서 바로 적용 되는 것 아님)-->
+    <!-- rel="stylesheet": rel 속성은 해당 링크의 관계를 정의하는데, stylesheet은 외부 스타일시트 파일 (css) 을 의미, 
+        즉 이 링크는 외부스타일스트 파일을 현재 HTML 문서에 연결하고 있음을 나타냄 
+    as 속성은 브라우저에게 리소스의 유형을 알려줄 때 , 이것은 브라우저에게 리소스의 유형에 대한 미리 알림을 제공하여 페이지의 로딩 성능을 향상시키는 데 도움이 될 수 있음-->
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="./css/common.css"> 
+
+</head>
+<body>
+  <h2 class = "page-subtitle">
+    Jinny 
+  </h2>
+  <h1 class="page-title">
+    Find My Job with MBTI <br>
+    !!!!!
+  </h1>
+  <img src="./images/main_character.png"alt = "character" class = "character">
+
+  <!-- a + tab , <a>tage: 페이지 이동을 위해서 href 에는 이동할 파일 경로 ,  버튼 만들기 -->
+  <a href="/questions.html" class= = "btn"> 
+    Let's Start! 
+  </a>
+  <div class ="btn">
+    Share! 
+  </div>
+
+
+    
+</body>
+</html>
