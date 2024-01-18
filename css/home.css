@@ -1,0 +1,23 @@
+body{
+    background-color: #F6FCFF;
+    background-image: url("../images/main_bg.jpg");
+    background-position: top center;
+    /* 이미지를 반복적으로 보이지 않게 할 것임 */
+    background-repeat: no-repeat;
+}
+.character{
+    /* 이미지가 화면이 줄어들어도 잘리지 않도록/ 근데 100%으로만 두면 너무 커지는 경우도 생김 */
+    width: 100%;
+    /* 그래서 제한을 둬야함 */
+    max-width: 364px;
+
+    /* 이것만 한다고 가운데 정렬 되지 않음 
+    why? : img tag는 글자요소, 이미지가 지금 글자요소(inline) 이기 때문 => 상자 요소여야 적용됨 */
+    margin-left:auto;
+    margin-right:auto;
+    /* 현대에 와서는 이미지를 레이아웃을 잡는 상자요소로 많이 쓰이기 때문에 상자요소로!!!  */
+    /* common.css 에서 img테그 자체에 display:block 해줬음  */
+    display: block;
+    margin-bottom: 40px;
+
+}

@@ -19,10 +19,14 @@
 
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="./css/common.css"> 
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- 자바스크립트로 html 읽을 떄 => defer -->
+    <script defer src="./js/share.js"></script>
 
 </head>
 <body>
   <h2 class = "page-subtitle">
+    
     Jinny 
   </h2>
   <h1 class="page-title">
@@ -31,11 +35,12 @@
   <img src="./images/main_character.png"alt = "character" class = "character">
 
   <!-- a + tab , <a>tage: 페이지 이동을 위해서 href 에는 이동할 파일 경로 ,  버튼 만들기 -->
-  <a href="/questions.html" class="btn"> 
+    <!-- class btn, btn-orange 동시에 지정해 줄 수 있음 , 뒤에나오는 css 가 우선순위가 높음 -->
+  <a href="/questions.html" class="btn btn-orange "> 
     Let's Start! 
   </a>
-  <div class ="btn">
-    Share! 
+  <div class ="btn btn-green btn-small share-or-copy">
+    Share My Result! 
   </div>
 
 

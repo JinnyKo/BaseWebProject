@@ -1,6 +1,13 @@
 body {
     /* font-family 이름은 font 제공하는 공식 문서에서 확인, sans-serif "고딕체" */
     font-family: "Pretendard Variable", sans-serif;
+    /* 한글 쓸 때 화면 사이즈가 변하는 것이 단어 기준으로 짤릴 수 있도록*/
+    word-break: keep-all;
+    padding-top: 80px;
+    padding-bottom: 80px; 
+}
+img{
+    display: block;
 }
 .page-title{
     font-size: 50px;
@@ -56,9 +63,43 @@ body {
     box-shadow: 0 14px 0 #e66000;
     margin-right: auto;
     margin-left:auto;
+    /* 버튼 눌렸을 떄 움직이는 시간  */
+    transition: 0.3s;
+} 
+
+.btn-orange{
+    background-color: #FFA32D;
+    box-shadow: 0 14px 0 #e66000;
+    color: white;
 }
-.btn-orange{}
-.btn-green{}
-.btn-gray{}
-.btn-small{}
+/* 가상 class 선택자: 요소를 클릭하고 있는 동안에만 효과를 줌 */
+.btn-orange:active {
+    box-shadow: 0 4px 0 #e66000;
+    /* shadow가 줄어들기만 하는 느낌이 있음 그래서 "이동하는 느낌" 추가 */
+    transform: translateY(10px);
+}
+.btn-green{
+    background-color: #32BFA1;
+    box-shadow: 0 14px 0 #299A82;  
+    color: #FFFFFF;
+}
+.btn-green:active {
+    box-shadow: 0 4px 0 #299A82;
+    transform: translateY(10px);
+}
+.btn-gray{
+    background-color: #F2F4F6;
+    box-shadow: 0 14px 0 #DFE1E2;
+    color: #444444;
+}
+.btn-gray:active{
+    box-shadow: 0 4px 0 #DFE1E2;
+    transform: translateY(10px);
+}
+.btn-small{
+    max-width:  350px;
+    height: 70px;
+    font-size: 26px;
+    margin-bottom: 3opx;
+}
 
