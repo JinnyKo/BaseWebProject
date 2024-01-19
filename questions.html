@@ -9,8 +9,9 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="./css/common.css"> 
     <link rel="stylesheet" href="./css/questions.css">
-  
-</head>
+    <!-- js 안에서 import 쓰기 위헤서는 type="module" 추가 => js 에서 다른 js "파일" 쓰겠다-->
+    <script type="module" defer src="./js/questions.js"></script>
+  </head>
 <body>
     <!-- 상단 progress bar 요소 -->
   <div class = "progress">
@@ -19,10 +20,10 @@
  </div>
  <div class="question-box">
     <div class="number">
-        01 
+        
     </div>
     <div class="question">
-        Test Message
+        
     </div>
     <div class="btn btn-gray choice choice1"></div>
     <div class="btn btn-gray choice choice2"></div>
