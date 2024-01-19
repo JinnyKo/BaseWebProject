@@ -1,0 +1,55 @@
+body{
+    background-image: url("../images/questions_bg.jpg");
+    background-position: top center;
+    /* 이미지 반복 x */
+    background-repeat: no-repeat;
+}
+.progress{
+    max-width: 500px;
+    height: 20px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+.progress .value{
+    /*부모요소 안에서의 % 로 적용 됨 => 이때는 500의 10% */
+    width: 10%;
+    height: 20px;
+    background-color: #FFB103;
+    border-radius: 10px;
+    /* 이 가로 너비는 질문이 지나면서 늘어 날 것임 */
+    transition: 0.2s;
+}
+.question-box{
+    max-width: 420px;
+    background-color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom:  60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px #DDE3E8;
+}
+.question-box .number{
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: #2EC7A6;
+    margin-bottom: 30px;
+}
+.question-box .question{
+    font-size: 30px;
+    font-weight: 700;
+    /* font size의 1.5배 만큼  */
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.question-box .choice{
+    border-radius: 120px;
+    font-size: 22px;
+}
