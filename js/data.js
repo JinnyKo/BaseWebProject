@@ -4,7 +4,7 @@ export const questions = [
   {
     //속성 
     number: '01',
-    question: '곧 크리스마스! 회사에서 크리스마스 파티 스텝을 모집한다는데?',
+    question: '곧 크리스마스! 회사에서 크리스마스 파티 스텝을 모집한다는데?' ,
     //선택한 choices 값에 따라서 value  
     choices: [
       { text: '파티 스텝은 못하지ㅎ...<br>(그래도 파티는 재밌겠다 히히)', value: 'i' },
