@@ -1,6 +1,6 @@
 //data array 
 export const questions = [
-  //{}객체 data 
+  //{}객체 data
   {
     //속성 
     number: '01',
