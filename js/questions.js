@@ -17,14 +17,28 @@ let mbti ='' //최종 mbti
 function renderQuestion() {
     const question = questions[currentNumber]
     //innerHTML: JavaScript를 사용하여 HTML 문서 내의 특정 요소의 내용을 동적으로 변경할 때 
-    numberEl.innerHTML = question.number
+    numberEl.innerHTML = question.numberP
     questionEl.innerHTML = question.question
     //속성 text => 문자 data
     choiceEl.innerHTML = question.choices[0].text
     choiceE2.innerHTML = question.choices[1].text
-    //progress bar 가로 비율 
+    //progress bar 가로 너비 지정, 비율 
     progressValueEl.style.width = (currentNumber + 1 ) * 10 + '%'
-    
+
+}
+function nextQuestion(choiceNumber) {
+    // 현재 질문에 대한 변수 받기
+    const question = questions[currentNumber]
+    mbti = mbti + question.choices[choiceNumber].value
+    currentNumber = currentNumber + 1 
+    renderQuestion()
 }
 
+// click event 추가 
+choiceE1.addEventListener('click', function() {
+    nextQuestion(0)
+})
+choiceE2.addEventListener('click', function() {
+    nextQuestion(1)
+})
 renderQuestion()
